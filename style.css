@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: #eee;
+    min-width: 400px;
+}
+
+.header{
+    background-color: #212121;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover,
+/**/.overlay a:hover{
+    transform: scale(1.1);
+  
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #eceff1; 
+    transition: 0.3s;
+    border-radius: 15px;
+    padding: 3px 10px;
+}
+
+.header .nav-links a:hover{
+    color: #212121;
+    background-color: #eee;
+}
+
+/**/.menu {
+    display:none;
+}
+
+.header .btn button,
+/**/.header .menu button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #212121;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover,
+/**/.header .menu button:hover{
+    background-color: #e2f1f8;
+    color: #212121;
+    transform: scale(1.1);
+}
+
+
+/**/@media screen and (max-width: 800px){
+    .nav-links, .btn {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
+
+
+
+/*Nav Mobile*/
+
+.header a{
+    text-decoration: none;  
+    /*borramos el que teniamos en .header .nav-links a*/ 
+}
+
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #313131;
+    opacity: 1;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #eceff1;
+}
+
+.header .overlay a:hover, 
+.header .overlay a:focus{
+    color: #eee;
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and (max-height:450px) {
+    .header .overlay a{
+        font-size: 20px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.post-header{
+    background-color: #191919;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.post-header img{
+    height: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card{
+    width: 325px;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 1px 2px 4px #313131;
+    margin: 20px;
+}
+
+.card-content{
+    padding: 15px;
+}
+
+.card-content h3{
+    text-align: center;
+    font-family: "inter";
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.card-content p{
+    text-align: center;
+    
+}
+
+
+.card img{
+    width: 100%;
+    height: 200px;
+}
+*/
+main{
+    display: flex;
+}
+
+h1{
+    font-family: "inter";
+    font-weight: 900;
+}
+
+@media(max-width:800px){
+    main{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 30px;
+        background: rgb(2,0,36);
+        background: linear-gradient(118deg, rgba(2,0,36,1) 0%, rgba(77,9,121,1) 35%, rgba(255,0,140,1) 100%); 
+        color: #eee;
+    
+       
+    }
+    main img{
+        height: 250px;
+        width: auto;
+        
+    }
+    h1{
+        font-size: 70px;
+    }
+
+    #mid-content{
+        background: rgb(45,39,148);
+        background: linear-gradient(213deg, rgba(45,39,148,1) 0%, rgba(42,128,190,1) 35%, rgba(34,198,43,1) 100%); 
+    }
+    #mid-content h2{
+        font-family: "inter";
+        font-weight: 900;
+        font-size: 45px;
+        text-align: center;
+        margin-left: 30px;
+        margin-top: 20px;
+        
+    }
+
+    #mid-content .box{
+        background-color: #212121;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        
+    }
+
+    #mid-content .box p{
+        color: #eee;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    #mid-content .box strong{
+        background: rgb(45,39,148);
+        background: linear-gradient(213deg, rgba(45,39,148,1) 0%, rgba(42,128,190,1) 35%, rgba(34,198,43,1) 100%); 
+        padding: 3px 15px;
+        border-radius: 15px;
+        margin-bottom: ;
+        color: #191919;
+    }
+
+    }
+
+    .tech .box-tech{
+        background-color: aqua;
+    }
+
+    #carrusel{
+        display: flex;
+        width: 400px;
+        height: 200px;
+        
+        margin: auto;
+        margin-top: 25px;
+        border-radius: 10px;
+    }
+
+    #carrusel img{
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: 0.5s ease;
+        border-radius: 10px;
+
+    }
+
+    #carrusel img:hover{
+        cursor: crosshair;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+
+    .carr-1{
+        text-align: center;
+    }
+
+}
