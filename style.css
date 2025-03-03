@@ -245,9 +245,7 @@ h1{
         font-size: 70px;
     }
 
-    #mid-content{
-     
-    }
+
     #mid-content h2{
         font-family: "inter";
         font-weight: 900;
@@ -277,11 +275,11 @@ h1{
         background-color: #005a50; 
         padding: 3px 15px;
         border-radius: 15px;
-        margin-bottom: ;
+        
         color: #191919;
     }
 
-    }
+    
 
     .tech .box-tech{
         background-color: aqua;
@@ -324,3 +322,4 @@ h1{
         text-align: center;
         margin-bottom: 20px;
     }
+}
